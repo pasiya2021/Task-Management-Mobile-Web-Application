@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query name="FetchUsers">
+    <sql>SELECT Id, Name, Email, CreatedDate FROM Users ORDER BY CreatedDate DESC</sql>
+  </query>
+  <query name="InsertUser">
+    <sql>INSERT INTO Users (Name, Email, CreatedDate) VALUES (@Name, @Email, @CreatedDate)</sql>
+  </query>
+  <query name="FetchTasksByUser">
+    <sql>SELECT Id, Title, Description, Status, CreatedDate, DueDate FROM Tasks WHERE UserId = @UserId ORDER BY DueDate</sql>
+  </query>
+  <query name="InsertTask">
+    <sql>INSERT INTO Tasks (Title, Description, Status, UserId, CreatedDate, DueDate) VALUES (@Title, @Description, @Status, @UserId, @CreatedDate, @DueDate)</sql>
+  </query>
+  <query name="UpdateTaskStatus">
+    <sql>UPDATE Tasks SET Status = @Status WHERE Id = @Id</sql>
+  </query>
+  <query name="RemoveTask">
+    <sql>DELETE FROM Tasks WHERE Id = @Id</sql>
+  </query>
+</queries>

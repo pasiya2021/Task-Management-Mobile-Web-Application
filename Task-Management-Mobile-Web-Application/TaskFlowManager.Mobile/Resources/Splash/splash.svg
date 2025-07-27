@@ -1,0 +1,5 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="56" fill="#14b8a6"/>
+  <circle cx="128" cy="128" r="70" fill="#f59e42"/>
+  <text x="128" y="145" text-anchor="middle" font-size="64" font-family="Segoe UI, Arial, sans-serif" fill="#fff" font-weight="bold">T</text>
+</svg>
